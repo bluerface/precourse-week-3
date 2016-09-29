@@ -15,6 +15,10 @@ body {
   padding: 20px;
 }
 
+em {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(20,20,20,0.6);
+}
 
 /*---header---*/
 .header-img {
@@ -96,4 +100,28 @@ nav ul:after {
     border-bottom: black 1px solid;
   }
 
+}
+
+/*---lightbox---*/
+
+.light-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(40, 40, 40, 0.7);
+}
+
+.light-image {
+  height: 80%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 80px rgba(0,0,0,0.95);
+  border: 1px white solid;
+  z-index: 3;
 }
