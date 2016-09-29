@@ -1,7 +1,6 @@
 body {
-  background-color: grey;
+  background-color: rgb(0,0,0);
   background-image: url(../images/burried.png);
-
 }
 
 .wrapper {
@@ -35,7 +34,7 @@ body {
   padding: 0 20px;
   background-image: linear-gradient(
       rgba(110,110,110,0),
-      rgba(40,40,40, 0.9)
+      rgba(20,20,20, 0.9)
     );
 }
 .header-text h1 {
@@ -75,6 +74,15 @@ nav li {
   float: left;
 }
 
+nav ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 @media screen and (max-width: 500px) {
   nav li{
     width: 100%;
@@ -88,13 +96,4 @@ nav li {
     border-bottom: black 1px solid;
   }
 
-}
-
-nav ul:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
 }
