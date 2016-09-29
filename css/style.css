@@ -105,7 +105,7 @@ nav ul:after {
 /*---lightbox---*/
 
 .light-box {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -115,7 +115,7 @@ nav ul:after {
 }
 
 .light-image {
-  height: 80%;
+  width: 80%;
   display: block;
   position: absolute;
   top: 50%;
